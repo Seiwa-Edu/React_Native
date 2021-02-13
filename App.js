@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Image } from 'react-native';
 
 export default function App() {
   return (
@@ -8,7 +8,13 @@ export default function App() {
       <StatusBar style="auto" />
       <View
       style={styles.itemContainer}>
-        <View style={styles.leftContainer}/>
+        {/* <View style={styles.leftContainer}/> */}
+        <Image
+        style={{width: 100, height: 100}}
+        source={{
+          uri: 'https://reactnative.dev/img/tiny_logo.png',
+        }}
+      />
         <View style={styles.rightContainer}/>
       </View>
     </View>
